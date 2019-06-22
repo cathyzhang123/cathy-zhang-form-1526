@@ -1,0 +1,107 @@
+/*======================================
+TABLE OF CONTENTS
+========================================
+1. common setting
+2. desktop view 
+3. css font size
+4. main content
+*/
+
+/*======================================
+2. common setting, 
+Colors
+#DDD
+#F5F5F5
+#6495ED
+========================================*/
+body {
+    font-family: "Arial", "Helvetica", "Helvetica Neue", sans-serif;
+    line-height: 1.6rem;
+    font-size: 1rem;
+}
+
+/*define main content size to be 50rem*/
+.wrapper {
+    max-width: 50rem;
+    margin: 0 auto; 
+}
+
+legend {
+    font-size: 2rem;
+    border: 1px solid #DDD;
+    background-color: #fff;
+}
+
+fieldset {
+    border: 1px solid #DDD;
+    background-color: #F5F5F5;;
+}
+
+/*======================================
+2. desktop view
+========================================*/
+/*define breakpoint at 25rem*/
+@media only screen and (min-width: 25rem){  
+    /*form text fields display when in desktop view*/
+    body {
+        font-size: 1.5rem;
+    } 
+
+    .inline-field { 
+        display: grid;
+        grid-template-columns: 1fr 1fr;  
+        grid-column-gap: 24px;    
+    }
+
+    /*decrease button size when in desktop view*/
+    .btn-block {
+        width: auto;
+        padding-left: 30px;
+        padding-right: 30px;      
+    }
+}   
+
+/*======================================
+3. css font size
+========================================*/
+/*replicate the font size in different size based on screenshot*/
+/*font size break point at 40rem*/
+@media only screen and (min-width: 40rem){ 
+    body {
+        font-size: 1.2rem;
+    } 
+}
+
+/*font size break point at 50rem*/
+@media only screen and (min-width: 50rem){ 
+    body {
+        font-size: 1rem;
+    } 
+}
+
+/*======================================
+4. main content
+========================================*/
+/*define form header size */
+legend {
+    width: auto;
+}
+
+/*define field inside form*/
+input, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
